@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Напишите скрипт, который отображает только логин, UID и путь 
+# каждой записи в файле /etc/passwd
+
+echo  "LOGIN              UID    PATH"
+cat /etc/passwd | cut -d ':' -f1,3,7 | sed 's/:/ /g' | column -t

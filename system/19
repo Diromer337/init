@@ -1,0 +1,43 @@
+# Перечислите все сервисы, которые запускаются во время загрузки
+# и назовите этот вид сервисов
+
+systemctl list-unit-files --type=service | grep "enabled" | awk -F'.service' '{print $1}'
+
+# ccounts-daemon
+# anacron
+# apparmor
+# autovt@
+# avahi-daemon
+# bluetooth
+# console-setup
+# cron
+# cups-browsed
+# cups
+# dbus-fi.w1.wpa_supplicant1
+# dbus-org.bluez
+# dbus-org.freedesktop.Avahi
+# dbus-org.freedesktop.ModemManager1
+# dbus-org.freedesktop.nm-dispatcher
+# dbus-org.freedesktop.timesync1
+# getty@
+# keyboard-setup
+# lm-sensors
+# ModemManager
+# network-manager
+# networking
+# NetworkManager-dispatcher
+# NetworkManager-wait-online
+# NetworkManager
+# pppd-dns
+# rsyslog
+# ssh
+# sshd
+# syslog
+# systemd-fsck-root
+# systemd-timesyncd
+# udisks2
+# vboxadd
+# vboxadd
+# wpa_supplicant
+
+# daemom

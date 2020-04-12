@@ -1,0 +1,3 @@
+# Найдите IP - адрес назначенный вам сервером DHCP
+
+ipconfig getifaddr en0

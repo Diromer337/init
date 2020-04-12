@@ -1,0 +1,6 @@
+# Определите MAC - адрес Wi-Fi карты
+
+# networksetup -listallhardwareports
+# Узнать под каким номером Wi-Fi карта
+
+ifconfig en1 | grep ether | awk '/ether/{print $2}'

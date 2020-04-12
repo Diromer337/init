@@ -1,0 +1,3 @@
+# Какая команда перезагружает SSH?
+
+service ssh restart
